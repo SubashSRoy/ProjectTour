@@ -1,0 +1,251 @@
+
+        body {
+            background-image: url("https://i.pinimg.com/originals/37/a3/8f/37a38f5919cb66598a387a24d3e0f0fc.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0 auto;
+        }
+
+        .footer {
+            color: blanchedalmond;
+        }
+
+        .unord {
+            list-style-type: none;
+            margin-left: -35px;
+        }
+
+        .browse {
+            margin-bottom: 10px;
+            margin-top: 10px;
+            color: rgba(248, 88, 60, 0.884);
+        }
+
+        .browse a:hover {
+            color: red;
+        }
+
+        #foow {
+            color: rgba(248, 88, 60, 0.884);
+        }
+
+        #foow:hover {
+            color: red;
+        }
+
+        .icon {
+            padding: 10px;
+            font-size: 15px;
+            width: 40px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border: 3px double;
+            border-radius: 20px;
+            background-color: #22292f;
+            color: whitesmoke;
+        }
+
+        .navicon {
+            font-size: 15px;
+            margin-right: 10px;
+            color: rgba(12, 57, 124, 0.651);
+        }
+
+        .custom-control-input.is-valid~.custom-control-label,
+        .was-validated .custom-control-input:valid~.custom-control-label {
+            color: black;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        #navbr {
+            z-index: 1;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            margin-top: 10px;
+            background-color: rgba(0, 0, 0, 0.4) !important;
+         }
+        #navbr.customnav{
+            background-color: #07a6ffa1 !important;
+        }
+        #navbr a.nav-link{
+            border-bottom: 2px groove transparent;
+        }
+        #navbr a.nav-link:hover{
+            border-bottom-color: #fafafadc;
+        }
+        #navbr.customnav a.nav-link{
+            border-bottom-color: transparent;
+        }
+        #navbr.customnav a.nav-link:hover{
+            border-bottom-color: #f9faf4dc;
+        }
+        @media (max-width: 500px){
+            .carousel-inner img {
+                width: 400%;
+                height: 100%;
+            }
+        }
+
+        #rsec{
+            background-image: url("https://newevolutiondesigns.com/images/freebies/white-wallpaper-9.jpg");
+            display: block;
+            height: 100vh;
+            width: 100%;
+            background-color: #f3f3f4;
+            background-size: cover;
+            background-position: center center;   
+        }
+       
+        #lsec{
+            background-color: #ffffff;
+            background-image: linear-gradient(90deg, #d4d4d4, #ffffff);
+        }
+
+        @media only screen and (max-width: 1000px){
+            #rsec{
+               display: none;
+            }
+        }
+
+        #gs{
+            position: relative;
+            padding-top: 1.875rem;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .things-to-do__header {
+            display: block;
+            content: "";
+            position: absolute;
+            width: 3.75rem;
+            height: 0.25rem;
+            background: #ffb600;
+            top: 20px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            margin-bottom: 10px;  ;
+        }
+
+        #sec3hd{
+            font-family: 'Playball', cursive;
+            text-align: center;
+            color: tomato;
+            padding: 20px;
+            font-size: 50px;
+        }
+
+        #chennai{
+            height: 12.25rem;
+            background-size: cover;
+            background-position: center;
+            margin: 5px 5px;
+        }
+        #delhi{
+            height: 12.25rem;
+            background-size: cover;
+            background-position: center;
+            margin: 5px 5px;
+        }
+        #agra{
+            height: 12.25rem;
+            background-size: cover;
+            background-position: center;
+            margin: 5px 5px;
+        }
+        #kolkata{
+            height: 12.25rem;
+            background-size: cover;
+            background-position: center;
+            margin: 5px 5px;
+        }
+
+        #delhi {
+            position: relative;
+          }
+        #chennai {
+            position: relative;
+        }
+        #kolkata {
+            position: relative;
+        }
+        #agra {
+            position: relative;
+        }
+          
+        .overlay {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(226, 149, 250, 0.25);
+        overflow: hidden;
+        width: 100%;
+        height:0;
+        transition: .5s ease;
+        }
+        
+        #delhi:hover .overlay {
+            bottom: 0;
+            height: 100%;
+        }
+        #agra:hover .overlay {
+            bottom: 0;
+            height: 100%;
+        }
+        #kolkata:hover .overlay {
+            bottom: 0;
+            height: 100%;
+        }
+        #chennai:hover .overlay {
+            bottom: 0;
+            height: 100%;
+        }
+        
+        .text {
+        color: white;
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: 'Playball', cursive;
+        }
+
+        .blog1{
+            background-color:rgba(148, 243, 60, 0.534);
+            margin:100px 100px;
+            
+        }
+
+        @media (max-width: 600px){
+            .blog1{
+               margin:0 auto;
+            }
+        }
+
+
+        .link1:hover{
+            color: black !important;
+        } 
+
+        #ext{
+            margin:0;
+        }
+
+        #navbr.customnav a.nav-link.btnn:hover{
+            border-bottom-color: transparent;
+        }
+
+        #navbr a.nav-link.btnn:hover{
+            border-bottom-color: transparent;
+        }

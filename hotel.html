@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hotels-Amarnath Tours and Travels</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type='text/css' href="G:\Web Development\custom.css">
+    <link rel="stylesheet" type='text/css' href="G:\Web Development\custom1.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Farsan" rel="stylesheet">
+    <script src="mag.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navbr">
+        <div class="container" style="margin-top: 0px; scroll-padding-right: 20px;">
+            <a class="navbar-brand" href="#" style="color: white">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="file:///G:/Web%20Development/index.html" style="color: white">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" style="color: white">Disabled</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav my-2 my-lg-0">
+                    <li class="nav-item" style="margin-right: 10px; margin-bottom: 5px">
+                        <a class="nav-link btn btn-primary btnn" href="#"
+                            style="color: #ffffff; font-family: 'Playball', cursive; " data-toggle="modal"
+                            data-target="#myModal">
+                            <i class="fa fa-sign-in navicon" style="color: #ffffff"></i>Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-danger btnn" href="#"
+                            style="color: #ffffff; font-family: 'Playball', cursive; " data-toggle="modal"
+                            data-target="#myModal1">
+                            <i class="fa fa-user navicon" style="color: #ffffff"></i>Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">
+                            <i>
+                                <b>Sign In</b>
+                            </i>
+                        </h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <section>
+                            <div class="container">
+                                <form action="/action_page.php" class="needs-validation" novalidate>
+                                    <div class="form-group">
+                                        <label for="uname"
+                                            style="font-family: 'Playball', cursive; font-size: 30px; font-weight: bold">Username
+                                            :
+                                        </label>
+                                        <input type="text" class="form-control" id="uname" placeholder="Enter username"
+                                            name="uname" required>
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pwd"
+                                            style="font-family: 'Playball', cursive; font-size: 30px; font-weight: bold">Password
+                                            :
+                                        </label>
+                                        <input type="password" class="form-control" id="pwd"
+                                            placeholder="Enter password" name="pswd" required>
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1"
+                                            style="font-family: 'Satisfy', cursive; font-weight: bold">Remember
+                                            me</label>
+                                    </div>
+                                    <br>
+                                    <button type="submit" class="btn btn-outline-primary"
+                                        style="margin-top: 5px; font-family: 'Playball', cursive;">Submit</button>
+                                </form>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="myModal1">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">
+                            <i>
+                                <b>Sign Up</b>
+                            </i>
+                        </h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="container">
+                            <form action="/action_page.php" class="needs-validation" novalidate>
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <!-- <form action="/action_page.php" class="needs-validation" novalidate> -->
+                                        <div class="form-group">
+                                            <label for="usname"
+                                                style="font-family: 'Playball', cursive; font-size: 30px; font-weight: bold">Name
+                                                :
+                                            </label>
+                                            <input type="text" class="form-control" id="usname"
+                                                placeholder="Enter Your Name" name="usname" required>
+                                            <div class="valid-feedback">Valid.</div>
+                                            <div class="invalid-feedback">Please fill out this field.</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="phno"
+                                                style="font-family: 'Playball', cursive; font-size: 30px; font-weight: bold">Phone
+                                                Number :
+                                            </label>
+                                            <input type="text" class="form-control" id="phno"
+                                                placeholder="Enter Your Phone Number" name="phno" required>
+                                            <div class="valid-feedback">Valid.</div>
+                                            <div class="invalid-feedback">Please fill out this field.</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="mail"
+                                                style="font-family: 'Playball', cursive; font-size: 30px; font-weight: bold">Email
+                                                :
+                                            </label>
+                                            <input type="email" class="form-control" id="mail"
+                                                placeholder="Enter Your Email" name="mail" required>
+                                            <div class="valid-feedback">Valid.</div>
+                                            <div class="invalid-feedback">Please fill out this field.</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="comment"
+                                                style="font-family: 'Playball', cursive; font-size: 30px; font-weight: bold">Address:</label>
+                                            <textarea class="form-control" rows="5" id="comment"
+                                                placeholder="Enter Your Address" name="comment" required></textarea>
+                                            <div class="valid-feedback">Valid.</div>
+                                            <div class="invalid-feedback">Please fill out this field.</div>
+                                        </div>
+                                        <br>
+
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="form-group">
+                                            <label for="usr"
+                                                style="font-family: 'Playball', cursive; font-size: 30px; font-weight: bold">Username
+                                                :
+                                            </label>
+                                            <input type="text" class="form-control" id="usr"
+                                                placeholder="Enter Your Username" name="usr" required>
+                                            <div class="valid-feedback">Valid.</div>
+                                            <div class="invalid-feedback">Please fill out this field.</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="paswd"
+                                                style="font-family: 'Playball', cursive; font-size: 30px; font-weight: bold">Password
+                                                :
+                                            </label>
+                                            <input type="password" class="form-control" id="paswd"
+                                                placeholder="Enter Your Password" name="paswd" required>
+                                            <div class="valid-feedback">Valid.</div>
+                                            <div class="invalid-feedback">Please fill out this field.</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cpaswd"
+                                                style="font-family: 'Playball', cursive; font-size: 30px; font-weight: bold">Confirm
+                                                Password :
+                                            </label>
+                                            <input type="password" class="form-control" id="cpaswd"
+                                                placeholder="Confirm Password" name="cpaswd" required>
+                                            <div class="valid-feedback">Valid.</div>
+                                            <div class="invalid-feedback">Please fill out this field.</div>
+                                        </div>
+                                        <div style="display:flex; justify-content: flex-end;">
+                                            <button type="submit" class="btn btn-outline-primary"
+                                                style="margin-top: 40px; font-family: 'Playball', cursive;">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="backtop"></div>
+    <div class="inform" style="background-color:#ffffff;">
+        <div class="container">
+            <h1 id="head1">Where is a good place to stay during the tour?</h1>
+            <p style="text-align:center;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum ab sint,
+                quae nihil dignissimos corporis veniam illo perferendis ipsum molestiae minima commodi illum tempore ut
+                autem non ullam, maiores quia.</p>
+            <div class="things-to-do__header"></div>
+            <div class="row">
+                <div class="col-md">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://i.pinimg.com/originals/af/cc/ad/afccad75118111f095ed7140c00f37d6.jpg"
+                            alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Mumbai Hotels
+                            </h4>
+                            <a href="#" class="stretched-link link1"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://www.zedinteriors.com/assets/user/images/project/Mid-Century-Modern-Restaurant.jpg"
+                            alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Delhi Hotels
+                            </h4>
+                            <a href="#" class="stretched-link link1"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="http://inhouseexpressions.co.in/images/33.jpg"
+                            alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Kolkata Hotels
+                            </h4>
+                            <a href="#" class="stretched-link link1"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://rimghtlak.mmtcdn.com/CollectionImages/201509091548024335/4_room_with_sea_view.jpg"
+                            alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Chennai Hotels
+                            </h4>
+                            <a href="#" class="stretched-link link1"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="padding-bottom: 30px;"></div>
+    </div>
+    </div>
+    <section style="background-color: rgba(0, 0, 0, 0.90);">
+        <div class="footer container">
+            <br>
+            <div class="row">
+                <div class="col-md">
+                    <h2>Stay Connected</h2>
+                    <p>Join over 10,500 people who recieve bi-weekly web marketing tips</p>
+                    <div class="form-group row">
+                        <div class="col">
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-danger" type="submit" style="
+                            margin-left: -20px;">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="fa fa-facebook icon"></a>
+                        <a href="#" class="fa fa-twitter icon"></a>
+                        <a href="#" class="fa fa-google icon"></a>
+                        <a href="#" class="fa fa-linkedin icon"></a>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <h2>COMITTED TO CHICAGO</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi reiciendis molestias eligendi
+                        minima sint
+                        necessitatibus quis iste eos quibusdam non. Illum fugiat nihil hic dolore, odit illo accusamus
+                        culpa
+                        perferendis.
+                    </p>
+                    <a href="#" id="foow">More about our travelling Agency</a>
+                </div>
+                <div class="col-md" style="margin-left:30px;">
+                    <h2>NAVIGATE</h2>
+                    <div class="row">
+                        <div class="col-sm">
+                            <ul class="unord">
+                                <li class="browse">
+                                    <a href="#">Portfolio ></a>
+                                </li>
+                                <li class="browse">
+                                    <a href="#">Web Design & Development ></a>
+                                </li>
+                                <li class="browse">
+                                    <a href="#">About Us ></a>
+                                </li>
+                                <li class="browse">
+                                    <a href="#">Our Team ></a>
+                                </li>
+                                <li class="browse">
+                                    <a href="#">Blog ></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm">
+                            <ul class="unord">
+                                <li class="browse">
+                                    <a href="#">Portfolio ></a>
+                                </li>
+                                <li class="browse">
+                                    <a href="#">Web Design & Development ></a>
+                                </li>
+                                <li class="browse">
+                                    <a href="#">About Us ></a>
+                                </li>
+                                <li class="browse">
+                                    <a href="#">Our Team ></a>
+                                </li>
+                                <li class="browse">
+                                    <a href="#">Blog ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
